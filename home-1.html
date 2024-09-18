@@ -78,7 +78,6 @@
                 <div class="mil-menu-content">
                     <div class="row">
                         <div class="col-xl-5">
-
                             <nav class="mil-main-menu" id="swupMenu">
                                 <ul>
                                     <li class="mil-has-children mil-active">
@@ -113,8 +112,8 @@
                                     <li class="mil-has-children">
                                         <a href="#" id="langToggle">🌐 Language</a>
                                     </li>
-                                </ul>                            </nav>
-
+                                </ul>
+                            </nav>
                         </div>
                         <div class="col-xl-7">
 
@@ -214,7 +213,7 @@
                <section class="mil-banner">
         <div class="video-background">
             <video autoplay muted loop id="background-video">
-                <source src="vd/vd.mp4" type="video/mp4">
+                <source src="vd/videoplayback_3" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
         </div>
@@ -735,28 +734,3 @@
 </body>
 
 </html>
-
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-    const langToggle = document.getElementById('langToggle');
-    let isEnglish = true;
-
-    langToggle.addEventListener('click', function(e) {
-        e.preventDefault();
-        isEnglish = !isEnglish;
-        
-        if (isEnglish) {
-            document.documentElement.lang = 'en';
-            document.body.classList.remove('rtl');
-        } else {
-            document.documentElement.lang = 'ar';
-            document.body.classList.add('rtl');
-        }
-
-        // Toggle visibility of English and Arabic content
-        document.querySelectorAll('.en, .ar').forEach(el => {
-            el.style.display = el.classList.contains(isEnglish ? 'en' : 'ar') ? 'block' : 'none';
-        });
-    });
-});
-</script>
