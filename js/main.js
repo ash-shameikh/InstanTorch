@@ -1067,3 +1067,27 @@ window.addEventListener('scroll', function() {
         frameTop.style.transform = 'translateY(0)';
     }
 });
+
+// Add this at the end of the file, just before the closing });
+
+// Language toggle functionality
+const langToggle = document.getElementById('langToggle');
+let isEnglish = true;
+
+langToggle.addEventListener('click', function(e) {
+    e.preventDefault();
+    isEnglish = !isEnglish;
+    
+    if (isEnglish) {
+        document.documentElement.lang = 'en';
+        document.body.classList.remove('rtl');
+    } else {
+        document.documentElement.lang = 'ar';
+        document.body.classList.add('rtl');
+    }
+
+    // Toggle visibility of English and Arabic content
+    document.querySelectorAll('.en, .ar').forEach(el => {
+        el.style.display = el.classList.contains(isEnglish ? 'en' : 'ar') ? 'block' : 'none';
+    });
+});
