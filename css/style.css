@@ -2833,7 +2833,7 @@ revievs
     height: 70px;
   }
 }
-.mil-revi-pagination .swiper-pagination-bullet .mil-custom-dot.mil-slide-1 {
+/* .mil-revi-pagination .swiper-pagination-bullet .mil-custom-dot.mil-slide-1 {
   background-image: url(../img/customers/1.jpg);
 }
 .mil-revi-pagination .swiper-pagination-bullet .mil-custom-dot.mil-slide-2 {
@@ -2853,7 +2853,7 @@ revievs
 }
 .mil-revi-pagination .swiper-pagination-bullet .mil-custom-dot.mil-slide-7 {
   background-image: url(../img/customers/1.jpg);
-}
+} */
 .mil-revi-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
   -webkit-box-shadow: inset 0 0 0 4px rgb(255, 0, 0);
           box-shadow: inset 0 0 0 4px rgb(255, 0, 0);
