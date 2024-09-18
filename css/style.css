@@ -2745,6 +2745,16 @@ social icons
       -ms-flex-pack: center;
           justify-content: center;
 }
+body.rtl {
+  direction: rtl;
+}
+
+body.rtl .mil-menu-frame,
+body.rtl .mil-banner-content,
+body.rtl .mil-about-content {
+  text-align: right;
+}
+
 .mil-social-icons li {
   list-style-type: none;
   margin-right: 15px;
