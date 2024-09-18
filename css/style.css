@@ -87,6 +87,10 @@ body {
   border-radius: 15px; /* Adjust the value as needed */
 }
 
+.shadow-effect {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adjust the values for shadow size and opacity */
+}
+
 
 *::-moz-selection {
   color: inherit;
