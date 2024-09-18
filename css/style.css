@@ -1278,7 +1278,7 @@ frame
   }
 }
 .logo-img {
-  width: 75px; /* Adjust as needed */
+  width: 95px; /* Adjust as needed */
   height: auto;
 }
 .mil-frame {
@@ -1769,7 +1769,7 @@ banner
     z-index: -1; /* Video should be below other content */
 }
 .mil-gradient {
-   background: rgba(0, 0, 0, 0.8); /* Dim the video */
+   background: rgba(0, 0, 0, 0.6); /* Dim the video */
     position: absolute;
     top: 0;
     left: 0;
@@ -2833,7 +2833,7 @@ revievs
     height: 70px;
   }
 }
-/* .mil-revi-pagination .swiper-pagination-bullet .mil-custom-dot.mil-slide-1 {
+.mil-revi-pagination .swiper-pagination-bullet .mil-custom-dot.mil-slide-1 {
   background-image: url(../img/customers/1.jpg);
 }
 .mil-revi-pagination .swiper-pagination-bullet .mil-custom-dot.mil-slide-2 {
@@ -2853,7 +2853,7 @@ revievs
 }
 .mil-revi-pagination .swiper-pagination-bullet .mil-custom-dot.mil-slide-7 {
   background-image: url(../img/customers/1.jpg);
-} */
+}
 .mil-revi-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
   -webkit-box-shadow: inset 0 0 0 4px rgb(255, 0, 0);
           box-shadow: inset 0 0 0 4px rgb(255, 0, 0);
@@ -4274,9 +4274,9 @@ page transitions
 }
 
 @keyframes fade {
-    0% { opacity: 0; }
-    50% { opacity: 1; }
-    100% { opacity: 0; }
+    0% { opacity: 1; }
+    50% { opacity: 2; }
+    100% { opacity: 1; }
 }
 
 
@@ -4354,25 +4354,4 @@ html.is-animating .mil-menu-frame {
   opacity: 0;
   -webkit-transition-delay: 0.3s;
           transition-delay: 0.3s;
-}
-body.rtl {
-  direction: rtl;
-}
-
-body.rtl .mil-menu-frame,
-body.rtl .mil-banner-content,
-body.rtl .mil-about-content,
-body.rtl .mil-reviews-slider,
-body.rtl .mil-footer-content {
-  text-align: right;
-}
-
-body.rtl .mil-menu-btn {
-  left: 30px;
-  right: auto;
-}
-
-body.rtl .mil-back-to-top {
-  left: 30px;
-  right: auto;
 }
