@@ -131,7 +131,7 @@ body {
 .language-toggle {
   position: fixed;
   top: 20px;
-  right: 150px;
+  right: 450px;
   z-index: 1000;
 }
 .language-toggle a {
