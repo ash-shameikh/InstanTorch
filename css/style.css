@@ -131,38 +131,39 @@ body {
 .language-toggle {
   position: fixed;
   top: 20px;
-  right: 450px;
+  right: 150px;
   z-index: 1000;
 }
+
 .language-toggle a {
   display: flex;
   align-items: center;
   background-color: rgba(255, 255, 255, 0.8);
-  padding: 8px 12px;
-  border-radius: 20px;
+  padding: 6px 10px; /* Adjusted padding for smaller size */
+  border-radius: 15px; /* Smaller border radius */
   text-decoration: none;
   color: #333;
 }
+
 .language-toggle i {
-  margin-right: 5px;
+  margin-right: 4px; /* Adjusted margin for smaller size */
 }
 
 a {
   text-decoration: none;
-  color: #007bff; /* Customize color */
-  font-size: 24px;
+  color: #ff5e00; /* Customize color */
+  font-size: 10px; /* Smaller font size */
 }
 
 a:hover {
   color: #0056b3; /* Hover color */
 }
 
-
 button {
   border: none;
   background: transparent;
   cursor: pointer;
-  font-size: 24px;
+  font-size: 10px; /* Smaller font size */
 }
 
 button i {
@@ -172,6 +173,38 @@ button i {
 button:hover i {
   color: #0056b3; /* Hover color */
 }
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .language-toggle {
+    top: 15px;
+    right: 20px;
+  }
+
+  .language-toggle a {
+    padding: 5px 8px; /* Smaller padding for smaller screens */
+    font-size: 9px;   /* Adjust font size */
+  }
+
+  button {
+    font-size: 9px; /* Smaller button size */
+  }
+}
+
+@media (max-width: 480px) {
+  .language-toggle {
+    top: 10px;
+    right: 10px;
+  }
+
+  .language-toggle a {
+    padding: 4px 6px; /* Even smaller padding for very small screens */
+    font-size: 8px;   /* Further adjust font size */
+  }
+
+  button {
+    font-size: 8px; /* Smaller button size for small
+
 
 .container {
   pointer-events: all;
