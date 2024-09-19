@@ -1073,20 +1073,16 @@ window.addEventListener('scroll', function() {
 // Add this at the end of the file, just before the closing });
 
 // Language toggle functionality
-document.addEventListener('DOMContentLoaded', () => {
-    const toggleToArabic = document.getElementById('toggleToArabic');
-    const toggleToEnglish = document.getElementById('toggleToEnglish');
 
-    if (toggleToArabic) {
-        toggleToArabic.addEventListener('click', () => {
-            window.location.href = 'home-1-ar.html'; // Navigate to Arabic page
-        });
-    }
-
-    if (toggleToEnglish) {
-        toggleToEnglish.addEventListener('click', () => {
-            window.location.href = 'home-1.html'; // Navigate to English page
-        });
-    }
-});
+    document.getElementById('languageToggle').addEventListener('click', function(e) {
+        e.preventDefault();
+        var currentLang = this.querySelector('span').textContent;
+        if (currentLang === 'EN') {
+            this.querySelector('span').textContent = 'AR';
+            // Add logic here to switch to Arabic
+        } else {
+            this.querySelector('span').textContent = 'EN';
+            // Add logic here to switch to English
+        }
+    });
 
