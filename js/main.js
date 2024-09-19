@@ -1073,23 +1073,19 @@ window.addEventListener('scroll', function() {
 // Add this at the end of the file, just before the closing });
 
 // Language toggle functionality
-document.getElementById('lang-toggle').addEventListener('click', function (e) {
-    e.preventDefault();
+document.addEventListener('DOMContentLoaded', () => {
+    const toggleToArabic = document.getElementById('toggleToArabic');
+    const toggleToEnglish = document.getElementById('toggleToEnglish');
 
-    // Check current language and toggle
-    if (document.documentElement.lang === "en") {
-        // Switch to Arabic
-        document.documentElement.lang = "ar";
-        document.documentElement.dir = "rtl"; // Set Right to Left
-        // Optionally update text to Arabic here
-        document.querySelector('.mil-banner-content h1').textContent = 'حماية ما يهمك أكثر';
-        document.querySelector('.mil-banner-content p').textContent = 'عملية إنفرا سيك';
-    } else {
-        // Switch back to English
-        document.documentElement.lang = "en";
-        document.documentElement.dir = "ltr"; // Set Left to Right
-        // Optionally update text back to English here
-        document.querySelector('.mil-banner-content h1').textContent = 'Protect what Matters Most';
-        document.querySelector('.mil-banner-content p').textContent = 'InfraSec Operation';
+    if (toggleToArabic) {
+        toggleToArabic.addEventListener('click', () => {
+            window.location.href = 'index-ar.html'; // Navigate to Arabic page
+        });
+    }
+
+    if (toggleToEnglish) {
+        toggleToEnglish.addEventListener('click', () => {
+            window.location.href = 'index.html'; // Navigate to English page
+        });
     }
 });
