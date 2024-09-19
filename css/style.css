@@ -182,28 +182,28 @@ button:hover i {
   }
 
   .language-toggle a {
-    padding: 5px 8px; /* Smaller padding for smaller screens */
-    font-size: 9px;   /* Adjust font size */
+    padding: 8px 12px; /* Smaller padding for smaller screens */
+    font-size: 13px;   /* Adjust font size */
   }
 
   button {
-    font-size: 9px; /* Smaller button size */
+    font-size: 12px; /* Smaller button size */
   }
 }
 
 @media (max-width: 480px) {
   .language-toggle {
     top: 10px;
-    right: 10px;
+    right: 170px;
   }
 
   .language-toggle a {
-    padding: 4px 6px; /* Even smaller padding for very small screens */
+    padding: 8px 12px; /* Even smaller padding for very small screens */
     font-size: 8px;   /* Further adjust font size */
   }
 
   button {
-    font-size: 8px; /* Smaller button size for small
+    font-size: 12px; /* Smaller button size for small
 
 
 .container {
