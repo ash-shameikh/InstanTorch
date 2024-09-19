@@ -1080,7 +1080,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (toggleToArabic) {
         toggleToArabic.addEventListener('click', () => {
-            window.location.href = 'home-1-ar.html'; // Navigate to Arabic page
+            window.location.href = 'home-ar.html'; // Navigate to Arabic page
         });
     }
 
