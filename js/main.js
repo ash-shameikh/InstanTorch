@@ -1080,13 +1080,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (toggleToArabic) {
         toggleToArabic.addEventListener('click', () => {
-            window.location.href = 'index-ar.html'; // Navigate to Arabic page
+            window.location.href = 'home-1-ar.html'; // Navigate to Arabic page
         });
     }
 
     if (toggleToEnglish) {
         toggleToEnglish.addEventListener('click', () => {
-            window.location.href = 'index.html'; // Navigate to English page
+            window.location.href = 'home-1.html'; // Navigate to English page
         });
     }
 });
