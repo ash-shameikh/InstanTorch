@@ -128,7 +128,16 @@ body {
     opacity: 1;
 }
 
+.language-toggle {
+  position: absolute;
+  top: 20px;
+  right: 60px; /* Adjust as needed */
+}
 
+.language-toggle img {
+  cursor: pointer;
+  width: 30px;
+}
 .container {
   pointer-events: all;
   position: relative; /* Ensure content is positioned correctly */
