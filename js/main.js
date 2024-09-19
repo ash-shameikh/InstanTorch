@@ -118,6 +118,26 @@ $(function () {
             $('.mil-preloader').addClass("mil-hidden");
         },
     }, "-=1");
+
+    document.getElementById('lang-toggle').addEventListener('click', function (e) {
+        e.preventDefault();
+        
+        // Check current language and toggle
+        if (document.documentElement.lang === "en") {
+            // Switch to Arabic
+            document.documentElement.lang = "ar";
+            document.documentElement.dir = "rtl"; // Set Right to Left
+            // Optionally update text to Arabic here
+            // Example: document.querySelector('.mil-banner-content h1').textContent = 'حماية ما يهمك';
+        } else {
+            // Switch back to English
+            document.documentElement.lang = "en";
+            document.documentElement.dir = "ltr"; // Set Left to Right
+            // Optionally update text back to English here
+            // Example: document.querySelector('.mil-banner-content h1').textContent = 'Protect what Matters Most';
+        }
+    });
+    
     /***************************
 
     anchor scroll
