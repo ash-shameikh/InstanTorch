@@ -2,14 +2,19 @@
 // Get the language parameter from the URL, default to 'en' if not set
 $lang = isset($_GET['lang']) ? $_GET['lang'] : 'en';
 
-// Determine the content file based on the language
-$contentFile = 'home-1-ar' . $lang . '.html';
-
-// Check if the content file exists
-if (!file_exists($contentFile)) {
-    $contentFile = 'home-1'; // Fallback to English if file not found
+// Determine the correct file name based on the language
+if ($lang === 'ar') {
+    $contentFile = 'content/home-1-ar.html'; // Arabic file
+} else {
+    $contentFile = 'content/home-1.html'; // English file
 }
 
-// Include the content file
-include($contentFile);
+// Check if the content file exists
+if (file_exists($contentFile)) {
+    // Include the corresponding content file
+    include($contentFile);
+} else {
+    // If file doesn't exist, fallback to the English page
+    include('content/home-1.html');
+}
 ?>
