@@ -4,9 +4,9 @@ $lang = isset($_GET['lang']) ? $_GET['lang'] : 'en';
 
 // Determine the correct file name based on the language
 if ($lang === 'ar') {
-    $contentFile = 'content/home-1-ar.html'; // Arabic file
+    $contentFile = 'home-1-ar.html'; // Arabic file
 } else {
-    $contentFile = 'content/home-1.html'; // English file
+    $contentFile = 'home-1.html'; // English file
 }
 
 // Check if the content file exists

@@ -1074,15 +1074,15 @@ window.addEventListener('scroll', function() {
 
 // Language toggle functionality
 
-    document.getElementById('languageToggle').addEventListener('click', function(e) {
-        e.preventDefault();
-        var currentLang = this.querySelector('span').textContent;
-        if (currentLang === 'EN') {
-            this.querySelector('span').textContent = 'AR';
-            // Add logic here to switch to Arabic
-        } else {
-            this.querySelector('span').textContent = 'EN';
-            // Add logic here to switch to English
-        }
-    });
+    // document.getElementById('languageToggle').addEventListener('click', function(e) {
+    //     e.preventDefault();
+    //     var currentLang = this.querySelector('span').textContent;
+    //     if (currentLang === 'EN') {
+    //         this.querySelector('span').textContent = 'AR';
+    //         // Add logic here to switch to Arabic
+    //     } else {
+    //         this.querySelector('span').textContent = 'EN';
+    //         // Add logic here to switch to English
+    //     }
+    // });
 
