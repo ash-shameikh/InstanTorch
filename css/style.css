@@ -51,6 +51,7 @@ p.s. I am available for Freelance hire (UI design, web development). email: mill
 --------------------------------------------*/
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css);
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" );
 /* -------------------------------------------
 
 main
@@ -91,6 +92,14 @@ body {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adjust the values for shadow size and opacity */
 }
 
+body {
+  font-family: 'Tajawal', sans-serif;
+}
+
+.arabic-text {
+  font-family: 'Tajawal', sans-serif;
+  font-weight: bold;
+}
 
 *::-moz-selection {
   color: inherit;
@@ -107,50 +116,34 @@ body {
   overflow: hidden;
   max-width: 100%;
 }
-.photo-background {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url('img/34.jpg');
-    background-size: cover;
-    background-position: center;
-    z-index: 0;
-}
 
 
-#background-photo {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-    opacity: 1;
-}
+
 
 .language-toggle {
-  position: fixed;
+  position: absolute;
+      padding: 12px 14px;
   top: 20px;
-  right: 150px;
+  right: 160px;
   z-index: 1000;
 }
 .language-toggle a {
   display: flex;
   align-items: center;
   background-color: rgba(255, 255, 255, 0.8);
-  padding: 8px 12px;
-  border-radius: 20px;
+  padding: 12px 14px;
+  border-radius: 22px;
   text-decoration: none;
   color: #333;
 }
 .language-toggle i {
-  margin-right: 5px;
+  margin-right: 7px;
 }
 
 a {
   text-decoration: none;
   color: #ff5e00; /* Customize color */
-  font-size: 12px;
+  font-size: 18px;
 }
 
 a:hover {
@@ -170,7 +163,7 @@ button i {
 }
 
 button:hover i {
-  color: #0056b3; /* Hover color */
+  color: #ff5e00; /* Hover color */
 }
 
 .container {
@@ -537,7 +530,7 @@ a {
 }
 
 .mil-suptitle {
-  position: relative;
+  position: absolute;
   display: block;
   margin-bottom: 60px;
 }
@@ -1332,10 +1325,11 @@ frame
 .logo-img {
   width: 75px; /* Adjust as needed */
   height: auto;
+    z-index: 1000;
 }
 .mil-frame {
     padding: 50px 60px 60px 60px;
-  position: fixed;
+  position: absolute;
   z-index: 2;
   pointer-events: none;
   display: -webkit-box;
@@ -1378,6 +1372,10 @@ frame
   .mil-frame .mil-frame-top .mil-menu-btn span, .mil-frame .mil-frame-top .mil-menu-btn span:after, .mil-frame .mil-frame-top .mil-menu-btn span:before {
     background: rgb(250, 250, 250);
   }
+    .mil-menu-btn1{
+        background: rgb(0, 0, 0);
+        
+    }
 }
 .mil-frame .mil-frame-bottom {
   width: 100%;
@@ -1468,6 +1466,7 @@ menu button
   -webkit-transition: inherit;
   transition: inherit;
 }
+
 .mil-menu-btn span {
   position: relative;
 }
@@ -1528,10 +1527,10 @@ menu
   }
 }
 .mil-menu-frame .mil-frame-top .mil-logo {
-  color: rgb(250, 250, 250);
+  color: rgb(0, 0, 0);
 }
 .mil-menu-frame .mil-frame-top .mil-menu-btn span, .mil-menu-frame .mil-frame-top .mil-menu-btn span:after, .mil-menu-frame .mil-frame-top .mil-menu-btn span:before {
-  background-color: rgb(255, 250, 250);
+  background-color: rgb(250, 250, 250);
 }
 .mil-menu-frame .mil-main-menu {
   -webkit-transform: translateX(-30px);
@@ -1675,7 +1674,7 @@ menu
       -ms-flex-align: center;
           align-items: center;
   font-weight: 500;
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(255, 0, 0, 0.8);
   font-size: 34px;
   -webkit-transition: 0.4s cubic-bezier(0, 0, 0.3642, 1);
   transition: 0.4s cubic-bezier(0, 0, 0.3642, 1);
@@ -1707,13 +1706,13 @@ menu
 .mil-main-menu ul li a.mil-active:before {
   -webkit-transform: scale(1);
           transform: scale(1);
-  background-color: rgb(255, 0, 0);
+  background-color: rgb(255, 250, 250);
 }
 .mil-main-menu ul li.mil-active > a {
-  color: rgb(255, 0, 0);
+  color: rgb(255, 250, 250);
 }
 .mil-main-menu ul li.mil-active > a:hover {
-  color: rgb(255, 0, 0) !important;
+  color: rgb(255, 250, 250) !important;
   -webkit-filter: brightness(110%);
           filter: brightness(110%);
 }
@@ -2938,7 +2937,7 @@ revievs
   transition: 0.4s cubic-bezier(0, 0, 0.3642, 1);
 }
 .mil-slider-nav .mil-slider-arrow svg path {
-  fill: rgb(255, 0, 0);
+  fill: rgb(255, 250, 250);
 }
 .mil-slider-nav .mil-slider-arrow.mil-prev {
   margin-right: 10px;
@@ -3100,7 +3099,7 @@ blog
 }
 
 .mil-pagination-btn.mil-active {
-  background-color: rgb(255, 0, 0);
+  background-color: rgb(255, 250, 250);
 }
 
 .mil-category-list {
@@ -3141,7 +3140,7 @@ blog
   background-color: rgb(229, 229, 229);
 }
 .mil-category-list li a.mil-active {
-  background-color: rgb(255, 0, 0);
+  background-color: rgb(255, 250, 250);
 }
 @media screen and (max-width: 768px) {
   .mil-category-list {
@@ -3190,7 +3189,7 @@ footer
 .mil-footer-menu ul li a:hover {
   -webkit-transform: translateX(10px);
           transform: translateX(10px);
-  color: rgb(255, 0, 0);
+  color: rgb(255, 250, 250);
 }
 @media screen and (max-width: 768px) {
   .mil-footer-menu ul li a {
@@ -3198,7 +3197,7 @@ footer
   }
 }
 .mil-footer-menu ul li.mil-active a {
-  color: rgb(255, 0, 0);
+  color: rgb(255, 250, 250);
 }
 .mil-footer-menu ul li.mil-active a:hover {
   -webkit-transform: none;
