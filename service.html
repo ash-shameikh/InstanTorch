@@ -6,6 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<script src="https://unpkg.com/i18next/i18next.min.js"></script>
 
     <!-- bootstrap grid css -->
     <link rel="stylesheet" href="css/plugins/bootstrap-grid.css">
@@ -23,7 +24,9 @@
 </head>
 
 <body>
-
+ <div class="language-toggle">
+    <a href="?lang=ar"><button>AR</button></a>
+    </div>
     <!-- wrapper -->
     <div class="mil-wrapper" id="top">
 
@@ -59,19 +62,18 @@
   </div>
 </div>
             <!-- frame clone end -->
-            <div class="container">
+           <div class="container">
                 <div class="mil-menu-content">
                     <div class="row">
                         <div class="col-xl-5">
 
                             <nav class="mil-main-menu" id="swupMenu">
                                 <ul>
-                                    <li class="mil-has-children">
+                                    <li class="mil-has-children mil-active">
                                         <a href="#.">Homepage</a>
                                         <ul>
                                             <li><a href="home-1.html">Landing page</a></li>
-                                            <li><a href="home-2.html">Personal</a></li>
-                                            <li><a href="portfolio-3.html">Portfolio slider</a></li>
+                                            <li><a href="portfolio-3.html">Portfolio</a></li>
                                         </ul>
                                     </li>
                                     <li class="mil-has-children">
@@ -80,14 +82,14 @@
                                             <li><a href="portfolio-3.html">Slider</a></li>
                                         </ul>
                                     </li>
-                                    <li class="mil-has-children mil-active">
+                                    <li class="mil-has-children">
                                         <a href="#.">Services</a>
                                         <ul>
                                             <li><a href="services.html">Services List</a></li>
                                             <li><a href="service.html">Single service</a></li>
                                         </ul>
                                     </li>
-                        
+                                    
                                     <li class="mil-has-children">
                                         <a href="#.">Other pages</a>
                                         <ul>
@@ -115,12 +117,12 @@
                                             <h6 class="mil-muted mil-mb-30">Projects</h6>
 
                                             <ul class="mil-menu-list">
-                                                <li><a href="project-1.html" class="mil-light-soft">1111111111</a></li>
-                                                <li><a href="project-2.html" class="mil-light-soft">22222222222</a></li>
-                                                <li><a href="project-3.html" class="mil-light-soft">33333333333333</a></li>
-                                                <li><a href="project-4.html" class="mil-light-soft">4444444444444444</a></li>
-                                                <li><a href="project-5.html" class="mil-light-soft">555555555555555555</a></li>
-                                                <li><a href="project-6.html" class="mil-light-soft">66666666666666</a></li>
+                                                <li><a href="services.html" class="mil-light-soft">Fire Safety</a></li>
+                                                <li><a href="services.html" class="mil-light-soft">Consulting</a></li>
+                                                <li><a href="services.html" class="mil-light-soft">Safety Audits</a></li>
+                                                <li><a href="service.html" class="mil-light-soft"> Maintenance</a></li>
+                                                <li><a href="services.html" class="mil-light-soft">System Upgrades</a></li>
+                                                <li><a href="service.html" class="mil-light-soft"> Chocolonely</a></li>
                                             </ul>
 
                                         </div>
@@ -142,16 +144,16 @@
 
                                         <div class="col-lg-4 mil-mb-60">
 
-                                            <h6 class="mil-muted mil-mb-30">RIYADH</h6>
+                                            <h6 class="mil-muted mil-mb-30">Riyadh</h6>
 
-                                            <p class="mil-light-soft mil-up">71 South Los Carneros Road, California <span class="mil-no-wrap">+966</span></p>
+                                            <p class="mil-light-soft mil-up">location in riyadh <span class="mil-no-wrap">+51 Number</span></p>
 
                                         </div>
                                         <div class="col-lg-4 mil-mb-60">
 
-                                            <h6 class="mil-muted mil-mb-30">JEDDAH</h6>
+                                            <h6 class="mil-muted mil-mb-30">Jeddah</h6>
 
-                                            <p class="mil-light-soft"> <span class="mil-no-wrap">+966</span></p>
+                                            <p class="mil-light-soft">Location in jeddah <span class="mil-no-wrap">number</span></p>
 
                                         </div>
                                     </div>
@@ -172,11 +174,11 @@
         <!-- frame -->
         <div class="mil-frame">
             <div class="mil-frame-top">
-                <a href="home-1.html" class="mil-logo">INSTANT TORCH.</a>
-                <div class="mil-menu-btn">
-                    <span></span>
-                </div>
-            </div>
+  <img src="img/Untitled-2.png" alt="Logo" class="logo-img">
+  <div class="mil-menu-btn">
+    <span></span>
+  </div>
+</div>
             <div class="mil-frame-bottom">
                 <div class="mil-current-page"></div>
                 <div class="mil-back-to-top">
@@ -436,13 +438,13 @@
                             <div class="col-lg-4">
 
                                 <a href="service.html" class="mil-service-card-lg mil-other-card mil-more mil-mb-30">
-                                    <h4 class="mil-up mil-mb-30">PPPPPP and <br>PPPPPP FFFFFF</h4>
-                                    <p class="mil-descr mil-up mil-mb-30">Our creative agency is a team of professionals focused on helping your brand grow.</p>
+                                    <h4 class="mil-up mil-mb-30">Installation, Inspection,and <br>Maintenance</h4>
+                                    <p class="mil-descr mil-up mil-mb-30">includes the complete design and installation of fire alarm systems.</p>
                                     <ul class="mil-service-list mil-dark mil-mb-30">
-                                        <li class="mil-up"> Audits</li>
-                                        <li class="mil-up"> thinking</li>
-                                        <li class="mil-up">Methodologies</li>
-                                        <li class="mil-up">Wireframing</li>
+                                        <li class="mil-up"> System Design and Installation</li>
+                                        <li class="mil-up"> Inspection</li>
+                                        <li class="mil-up">Preventive Maintenance</li>
+                                        <li class="mil-up">Emergency Repair Services</li>
                                     </ul>
                                     <div class="mil-link mil-dark mil-arrow-place mil-up">
                                         <span>Read more</span>
@@ -453,13 +455,13 @@
                             <div class="col-lg-4">
 
                                 <a href="service.html" class="mil-service-card-lg mil-other-card mil-more mil-mb-30">
-                                    <h4 class="mil-up mil-mb-30">VVVVVVV <br>and XXXXXXXXXX</h4>
-                                    <p class="mil-descr mil-up mil-mb-30">Our creative agency is a team of professionals focused on helping your brand grow.</p>
+                                    <h4 class="mil-up mil-mb-30">Monitoring and <br>Emergency Response</h4>
+                                    <p class="mil-descr mil-up mil-mb-30">includes real-time notification services and ensures emergency responders are dispatched promptly when needed.</p>
                                     <ul class="mil-service-list mil-dark mil-mb-30">
-                                        <li class="mil-up"> Audits</li>
-                                        <li class="mil-up"> thinking</li>
-                                        <li class="mil-up">Methodologies</li>
-                                        <li class="mil-up">Wireframing</li>
+                                        <li class="mil-up"> Automated Alerts</li>
+                                        <li class="mil-up"> Emergency Dispatch Coordination</li>
+                                        <li class="mil-up">Ongoing Support</li>
+                                        <li class="mil-up">Performance Reporting</li>
                                     </ul>
                                     <div class="mil-link mil-dark mil-arrow-place mil-up">
                                         <span>Read more</span>
