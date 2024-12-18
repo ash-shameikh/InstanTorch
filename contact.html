@@ -109,15 +109,15 @@
                 <section id="contact">
                     <div class="container mil-p-120-90">
                         <h3 class="mil-center mil-up mil-mb-120">Let's <span class="mil-thin">Talk</span></h3>
-                        <form class="row align-items-center" action="send_email.php" method="POST">
+                        <form class="row align-items-center" id="contactForm" onsubmit="sendToWhatsApp(event)">
                             <div class="col-lg-6 mil-up">
-                                <input type="text" name="name" placeholder="What's your name" required>
+                                <input type="text" id="name" placeholder="What's your name" required>
                             </div>
                             <div class="col-lg-6 mil-up">
-                                <input type="email" name="email" placeholder="Your Email" required>
+                                <input type="email" id="email" placeholder="Your Email" required>
                             </div>
                             <div class="col-lg-12 mil-up">
-                                <textarea name="message" placeholder="Tell us about your project" required></textarea>
+                                <textarea id="message" placeholder="Tell us about your project" required></textarea>
                             </div>
                             <div class="col-lg-8">
                                 <p class="mil-up mil-mb-30"><span class="mil-accent">*</span> We promise not to disclose your personal information to third parties.</p>
@@ -125,13 +125,33 @@
                             <div class="col-lg-4">
                                 <div class="mil-adaptive-right mil-up mil-mb-30">
                                     <button type="submit" class="mil-button mil-arrow-place">
-                                        <span>Send Email</span>
+                                        <span>Send to WhatsApp</span>
                                     </button>
                                 </div>
                             </div>
                         </form>
                     </div>
                 </section>
+                
+                <script>
+                    function sendToWhatsApp(event) {
+                        event.preventDefault(); // Prevent form submission
+                        
+                        // Get form values
+                        const name = document.getElementById('name').value;
+                        const email = document.getElementById('email').value;
+                        const message = document.getElementById('message').value;
+                
+                        // Construct WhatsApp message
+                        const phoneNumber = "558398814"; // Your WhatsApp number
+                        const text = `Hello! My name is ${encodeURIComponent(name)}. My email is ${encodeURIComponent(email)}. Here's my message: ${encodeURIComponent(message)}`;
+                
+                        // Redirect to WhatsApp
+                        const whatsappURL = `https://wa.me/${phoneNumber}?text=${text}`;
+                        window.open(whatsappURL, '_blank'); // Open in a new tab
+                    }
+                </script>
+                
                 
                 <!-- contact form end -->
 
