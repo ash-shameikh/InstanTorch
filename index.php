@@ -6,7 +6,7 @@ $lang = isset($_GET['lang']) ? $_GET['lang'] : 'en';
 if ($lang === 'ar') {
     $contentFile = 'home-1-ar.html'; // Arabic file
 } else {
-    $contentFile = 'home-1.html'; // English file
+    $contentFile = 'index.html'; // English file
 }
 
 // Check if the content file exists
@@ -15,6 +15,6 @@ if (file_exists($contentFile)) {
     include($contentFile);
 } else {
     // If file doesn't exist, fallback to the English page
-    include('content/home-1.html');
+    include('content/index.html');
 }
 ?>
