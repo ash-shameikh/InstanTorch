@@ -72,7 +72,7 @@ document.addEventListener('DOMContentLoaded', () => {
             nav_home: "الرئيسية", nav_gallery: "خدماتنا", nav_locations: "فروعنا",
             brand_name_part1: "الشعلة", brand_name_part2: " الفورية",
             welcome_message: "مرحباً بكم في",
-            welcome_message1: "", // Keeping this empty for a cleaner look in Arabic
+            welcome_message1: "",
             hero_title: "خط دفاعك الأول",
             hero_subtitle: "حماية الرياض، إنقاذ الأرواح",
             hero_button: "شاهد خدماتنا", gallery_title: "خدماتنا",
@@ -145,6 +145,16 @@ document.addEventListener('DOMContentLoaded', () => {
     const themeSwitcher = document.getElementById('theme-switcher');
     const applyTheme = (theme) => {
         document.body.classList.toggle('light-mode', theme === 'light');
+        
+        // Dynamically change the video source based on the theme
+        const videoElement = document.getElementById('background-video');
+        if (videoElement) {
+            const videoSource = videoElement.querySelector('source');
+            if (videoSource) {
+                videoSource.src = theme === 'light' ? 'videos/water.mp4' : 'videos/fire.mp4';
+                videoElement.load(); // Reload the video with the new source
+            }
+        }
     };
 
     const langSwitcher = document.getElementById('lang-switcher');
@@ -161,7 +171,9 @@ document.addEventListener('DOMContentLoaded', () => {
     if (themeSwitcher) {
         themeSwitcher.addEventListener('click', () => {
             const isLight = document.body.classList.toggle('light-mode');
-            localStorage.setItem('theme', isLight ? 'light' : 'dark');
+            const newTheme = isLight ? 'light' : 'dark';
+            localStorage.setItem('theme', newTheme);
+            applyTheme(newTheme); // Call applyTheme to update the video
         });
     }
 
