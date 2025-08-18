@@ -73,7 +73,7 @@ document.addEventListener('DOMContentLoaded', () => {
             footer_text: `© ${new Date().getFullYear()} INSTANT TORCH. All Rights Reserved.`,
         },
         ar: {
-            page_title: "الشعلة الفورية - حلول مكافحة الحرائق",
+            page_title: "الشعلة السريعه - حلول السلامة",
             nav_home: "الرئيسية", nav_gallery: "خدماتنا", nav_locations: "فروعنا",
             brand_name_part1: "الشعلة", brand_name_part2: " السريعه",
             welcome_message: "مرحباً بكم في",
