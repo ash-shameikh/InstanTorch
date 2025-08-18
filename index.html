@@ -1,151 +1,190 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>INSTANT TORCH - الشعلة الفورية</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=Aref+Ruqaa:wght@400;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-key="page_title">INSTANT TORCH - الشعلة السريعة</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=Aref+Ruqaa:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <video id="background-video" autoplay loop muted playsinline>
-    <source src="" type="video/mp4">
+        <video id="background-video" autoplay loop muted playsinline>
+    <source src="" type="video/mp4">
 </video>
 
-    <header class="glass-panel">
-        <nav>
-            <a href="#home" class="logo">
-                <img src="images/instant-torch-logo.png" alt="Instant Torch Logo">
-            </a>
-            <ul>
-                <li><a href="#home" data-key="nav_home">Home</a></li>
-                <li><a href="#gallery" data-key="nav_gallery">Services</a></li>
-                <li><a href="#locations" data-key="nav_locations">Our Locations</a></li>
-            </ul>
-            <div class="controls">
-                <button id="theme-switcher" aria-label="Toggle theme">
-                    <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 7c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5zM2 13h2c.55 0 1-.45 1-1s-.45-1-1-1H2c-.55 0-1 .45-1 1s.45 1 1 1zm18 0h2c.55 0 1-.45 1-1s-.45-1-1-1h-2c-.55 0-1 .45-1 1s.45 1 1 1zM11 2v2c0 .55.45 1 1 1s1-.45 1-1V2c0-.55-.45-1-1-1s-1 .45-1 1zm0 18v2c0 .55.45 1 1 1s1-.45 1-1v-2c0-.55-.45-1-1-1s-1 .45-1 1zM5.99 4.58c-.39-.39-1.03-.39-1.41 0-.39.39-.39 1.03 0 1.41l1.06 1.06c.39.39 1.03.39 1.41 0s.39-1.03 0-1.41L5.99 4.58zm12.02 12.02c-.39-.39-1.03-.39-1.41 0-.39.39-.39 1.03 0 1.41l1.06 1.06c.39.39 1.03.39 1.41 0 .39-.39.39-1.03 0-1.41l-1.06-1.06zM17.93 5.99c.39-.39.39-1.03 0-1.41-.39-.39-1.03-.39-1.41 0l-1.06 1.06c-.39.39-.39 1.03 0 1.41s1.03.39 1.41 0l1.06-1.06zM7.05 18.01c.39-.39.39-1.03 0-1.41-.39-.39-1.03-.39-1.41 0l-1.06 1.06c-.39.39-.39 1.03 0 1.41s1.03.39 1.41 0l1.06-1.06z"/></svg>
-                    <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M9.5 2c-1.82 0-3.53.5-5 1.35 2.99 1.73 5 4.95 5 8.65s-2.01 6.92-5 8.65C6.02 21.49 7.74 22 9.5 22c5.52 0 10-4.48 10-10S15.02 2 9.5 2z"/></svg>
-                </button>
-                <div id="lang-switcher">
-                    <a href="#" class="lang-option" data-lang="en">English</a>
-                    <a href="#" class="lang-option" data-lang="ar">عربي</a>
-                </div>
-            </div>
-        </nav>
-    </header>
+    <header class="glass-panel">
+        <nav>
+            <a href="#home" class="logo">
+                <img src="img/instant-torch-logo.png" alt="Instant Torch Logo">
+            </a>
+            <ul>
+                <li><a href="#home" data-key="nav_home">Home</a></li>
+                <li><a href="#gallery" data-key="nav_gallery">Services</a></li>
+                <li><a href="#locations" data-key="nav_locations">Our Locations</a></li>
+            </ul>
+            <div class="controls">
+                <button id="theme-switcher" aria-label="Toggle theme">
+                    <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 7c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5zM2 13h2c.55 0 1-.45 1-1s-.45-1-1-1H2c-.55 0-1 .45-1 1s.45 1 1 1zm18 0h2c.55 0 1-.45 1-1s-.45-1-1-1h-2c-.55 0-1 .45-1 1s.45 1 1 1zM11 2v2c0 .55.45 1 1 1s1-.45 1-1V2c0-.55-.45-1-1-1s-1 .45-1 1zm0 18v2c0 .55.45 1 1 1s1-.45 1-1v-2c0-.55-.45-1-1-1s-1 .45-1 1zM5.99 4.58c-.39-.39-1.03-.39-1.41 0-.39.39-.39 1.03 0 1.41l1.06 1.06c.39.39 1.03.39 1.41 0s.39-1.03 0-1.41L5.99 4.58zm12.02 12.02c-.39-.39-1.03-.39-1.41 0-.39.39-.39 1.03 0 1.41l1.06 1.06c.39.39 1.03.39 1.41 0 .39-.39.39-1.03 0-1.41l-1.06-1.06zM17.93 5.99c.39-.39.39-1.03 0-1.41-.39-.39-1.03-.39-1.41 0l-1.06 1.06c-.39.39-.39 1.03 0 1.41s1.03.39 1.41 0l1.06-1.06zM7.05 18.01c.39-.39.39-1.03 0-1.41-.39-.39-1.03-.39-1.41 0l-1.06 1.06c-.39.39-.39 1.03 0 1.41s1.03.39 1.41 0l1.06-1.06z"/></svg>
+                    <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M9.5 2c-1.82 0-3.53.5-5 1.35 2.99 1.73 5 4.95 5 8.65s-2.01 6.92-5 8.65C6.02 21.49 7.74 22 9.5 22c5.52 0 10-4.48 10-10S15.02 2 9.5 2z"/></svg>
+                </button>
+                <div id="lang-switcher">
+                    <a href="#" class="lang-option" data-lang="en">English</a>
+                    <a href="#" class="lang-option" data-lang="ar">عربي</a>
+                </div>
+            </div>
+        </nav>
+    </header>
 
-    <main>
-        <section id="home">
-            <div class="hero-slider glass-panel">
-                <div class="slide active"><img src="images/fire-fighter.jpg" alt="Firefighter hero shot"></div>
-                <div class="slide"><img src="images/equipment.jpg" alt="Fire fighting equipment"></div>
-                <div class="slide"><img src="images/fire-truck.jpg" alt="Fire truck on a street"></div>
-                <div class="hero-text-container">
-                    <p class="welcome-message" data-key="welcome_message"></p>
-                    <p class="welcome-message1" data-key="welcome_message1"></p>
+    <main>
+        <section id="home">
+            <div class="hero-slider glass-panel">
+                                <div class="slide active"><img src="images/fire-fighter.jpg" alt="Instant Torch team hero shot"></div>
+                <div class="slide"><img src="images/equipment.jpg" alt="Instant Torch specialized equipment"></div>
+                <div class="slide"><img src="images/fire-truck.jpg" alt="Instant Torch rapid response vehicles"></div>
+                <div class="hero-text-container">
+                    <p class="welcome-message" data-key="welcome_message"></p>
+                    <p class="welcome-message1" data-key="welcome_message1"></p>
 
-                    <p class="brand-name">
-                        <span data-key="brand_name_part1">INSTANT</span>
-                        <span data-key="brand_name_part2">TORCH</span>
-                    </p>
-                    <h1 data-key="hero_title">Your First Line of Defense</h1>
-                </div>
-                <div class="hero-slider-dots"></div>
-            </div>
-        </section>
+                    <p class="brand-name">
+                        <span data-key="brand_name_part1">INSTANT</span>
+                        <span data-key="brand_name_part2">TORCH</span>
+                    </p>
+                    <h1 data-key="hero_title">Your First Line of Defense</h1>
+                    <p data-key="hero_subtitle"></p>
+                </div>
+                <div class="hero-slider-dots"></div>
+            </div>
+        </section>
 
-        <section id="gallery" class="glass-panel">
-            <h2 data-key="gallery_title">Our Services</h2>
-            <div class="gallery-grid">
-                <div class="gallery-item" data-title-key="g1_title" data-desc-key="g1_desc" data-media="images/service-1.jpg">
-                    <img src="images/service-1.jpg" alt="Fire Suppression Systems">
-                </div>
-                <div class="gallery-item" data-title-key="g2_title" data-desc-key="g2_desc" data-media="images/service-2.jpg">
-                    <img src="images/service-2.jpg" alt="Fire Alarm Installation">
-                </div>
-                <div class="gallery-item" data-title-key="g3_title" data-desc-key="g3_desc" data-media="images/service-3.jpg">
-                    <img src="images/service-3.jpg" alt="Fire Extinguisher Maintenance">
-                </div>
-                <div class="gallery-item" data-title-key="g4_title" data-desc-key="g4_desc" data-media="images/service-4.jpg">
-                    <img src="images/service-4.jpg" alt="Emergency Evacuation Plans">
-                </div>
-                <div class="gallery-item" data-title-key="g5_title" data-desc-key="g5_desc" data-media="images/service-5.jpg">
-                    <img src="images/service-5.jpg" alt="Fire Safety Training">
-                </div>
-                <div class="gallery-item" data-title-key="g6_title" data-desc-key="g6_desc" data-media="images/service-6.jpg">
-                    <img src="images/service-6.jpg" alt="Hydrant Systems">
-                </div>
-            </div>
-        </section>
+        <section id="gallery" class="glass-panel">
+            <h2 data-key="gallery_title">Our Services</h2>
+            <div class="gallery-grid">
+                                <div class="gallery-item" data-title-key="g1_title" data-desc-key="g1_desc" data-media="images/service-1.jpg">
+                    <img src="images/service-1.jpg" alt="Fire Suppression Systems">
+                </div>
+                <div class="gallery-item" data-title-key="g2_title" data-desc-key="g2_desc" data-media="images/service-2.jpg">
+                    <img src="images/service-2.jpg" alt="Fire Alarm Installation">
+                </div>
+                <div class="gallery-item" data-title-key="g3_title" data-desc-key="g3_desc" data-media="images/service-3.jpg">
+                    <img src="images/service-3.jpg" alt="Fire Extinguisher Maintenance">
+                </div>
+                <div class="gallery-item" data-title-key="g4_title" data-desc-key="g4_desc" data-media="images/service-4.jpg">
+                    <img src="images/service-4.jpg" alt="Emergency Evacuation Plans">
+                </div>
+                <div class="gallery-item" data-title-key="g5_title" data-desc-key="g5_desc" data-media="images/service-5.jpg">
+                    <img src="images/service-5.jpg" alt="Fire Safety Training">
+                </div>
+                <div class="gallery-item" data-title-key="g6_title" data-desc-key="g6_desc" data-media="images/service-6.jpg">
+                    <img src="images/service-6.jpg" alt="Hydrant Systems">
+                </div>
+            </div>
+        </section>
 
-        <div id="gallery-modal" class="modal">
-            <div class="modal-content ">
-                <span class="close-button">×</span>
-                <button class="modal-nav prev" aria-label="Previous image"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg></button>
-                <button class="modal-nav next" aria-label="Next image"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg></button>
-                <div class="modal-media-container">
-                    <img id="modal-image" src="" alt="Enlarged service view">
-                </div>
-                <div id="modal-details">
-                    <h3 id="modal-title"></h3>
-                    <p id="modal-description"></p>
-                </div>
-            </div>
-        </div>
+        <div id="gallery-modal" class="modal">
+            <div class="modal-content ">
+                <span class="close-button">×</span>
+                <button class="modal-nav prev" aria-label="Previous image"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg></button>
+                <button class="modal-nav next" aria-label="Next image"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg></button>
+                <div class="modal-media-container">
+                    <img id="modal-image" src="" alt="Enlarged service view">
+                </div>
+                <div id="modal-details">
+                    <h3 id="modal-title"></h3>
+                    <p id="modal-description"></p>
+                </div>
+            </div>
+        </div>
 
-        <section id="locations" class="glass-panel">
-            <div class="tabs">
-                <button class="tab-button active" data-target="#location-1" data-key="loc1_button">Headquarters</button>
-               
-            </div>
+        <section id="locations" class="glass-panel">
+            <div class="tabs">
+                <button class="tab-button active" data-target="#location-1" data-key="loc1_button"></button>
+                <button class="tab-button" data-target="#location-2" data-key="loc2_button"></button>
+                <button class="tab-button" data-target="#location-3" data-key="loc3_button"></button>
+            </div>
 
-            <div class="tab-content">
-                <div id="location-1" class="tab-pane active">
-                    <div class="location-details">
-                        <div class="map-container">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d145224.20459341496!2d46.5414008433722!3d24.71355172081604!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2f03890d489399%3A0x18728a9f23432729!2sRiyadh%20Saudi%20Arabia!5e0!3m2!1sen!2sus!4v1628000000000!5m2!1sen!2sus" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                        </div>
-                        <div class="contact-panel">
-                            <p><strong data-key="address_title">Address:</strong> <span data-key="loc1_address"></span></p>
-                            <div class="contact-links">
-                                <a href="tel:+966555123456" class="contact-link">
-                                    <svg viewBox="0 0 24 24"><path fill="currentColor" d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24c1.12.37 2.33.57 3.57.57c.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1c0 1.25.2 2.45.57 3.57c.11.35.03.74-.25 1.02z"/></svg>
-                                    <span data-key="call_us">Call Us</span>
-                                </a>
-                                <a href="https://wa.me/966555123456" target="_blank" class="contact-link">
-                                    <svg viewBox="0 0 24 24"><path fill="currentColor" d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38c1.45.79 3.08 1.21 4.79 1.21h.01c5.46 0 9.91-4.45 9.91-9.91c0-5.46-4.45-9.91-9.91-9.91zM17.5 14.3c-.28-.14-1.67-.82-1.93-.91c-.26-.1-.45-.14-.64.14c-.19.28-.73.91-.9 1.1c-.17.19-.34.21-.62.07c-.28-.14-1.17-.43-2.23-1.37c-.83-.72-1.39-1.62-1.56-1.9c-.17-.28-.02-.43.12-.57c.12-.12.28-.31.42-.46c.14-.14.19-.24.28-.41c.1-.17.05-.31-.02-.46c-.07-.14-.64-1.54-.87-2.1c-.24-.56-.48-.48-.64-.49c-.15-.01-.31-.01-.48-.01c-.17 0-.45.07-.68.31c-.24.24-.9.88-.9 2.15c0 1.27.93 2.49 1.06 2.66c.14.17 1.81 2.78 4.38 3.85c.6.26 1.07.41 1.43.52c.62.19 1.18.16 1.62.1c.48-.07 1.46-.6 1.67-1.18c.21-.58.21-1.07.14-1.18c-.07-.11-.26-.18-.53-.31z"/></svg>
-                                    <span data-key="whatsapp">WhatsApp</span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="tab-content">
+                <div id="location-1" class="tab-pane active">
+                    <div class="location-details">
+                        <div class="map-container">
+                                                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d145224.20459341496!2d46.5414008433722!3d24.71355172081604!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2f03890d489399%3A0x18728a9f23432729!2sRiyadh%20Saudi%20Arabia!5e0!3m2!1sen!2sus!4v1628000000000!5m2!1sen!2sus" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                        <div class="contact-panel">
+                            <p><strong data-key="address_title">Address:</strong> <span data-key="loc1_address"></span></p>
+                            <div class="contact-links">
+                                                                <a href="tel:+966555123456" class="contact-link">
+                                    <svg viewBox="0 0 24 24"><path fill="currentColor" d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24c1.12.37 2.33.57 3.57.57c.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1c0 1.25.2 2.45.57 3.57c.11.35.03.74-.25 1.02z"/></svg>
+                                    <span data-key="call_us">Call Us</span>
+                                </a>
+                                <a href="https://wa.me/966555123456" target="_blank" class="contact-link">
+                                    <svg viewBox="0 0 24 24"><path fill="currentColor" d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38c1.45.79 3.08 1.21 4.79 1.21h.01c5.46 0 9.91-4.45 9.91-9.91c0-5.46-4.45-9.91-9.91-9.91zM17.5 14.3c-.28-.14-1.67-.82-1.93-.91c-.26-.1-.45-.14-.64.14c-.19.28-.73.91-.9 1.1c-.17.19-.34.21-.62.07c-.28-.14-1.17-.43-2.23-1.37c-.83-.72-1.39-1.62-1.56-1.9c-.17-.28-.02-.43.12-.57c.12-.12.28-.31.42-.46c.14-.14.19-.24.28-.41c.1-.17.05-.31-.02-.46c-.07-.14-.64-1.54-.87-2.1c-.24-.56-.48-.48-.64-.49c-.15-.01-.31-.01-.48-.01c-.17 0-.45.07-.68.31c-.24.24-.9.88-.9 2.15c0 1.27.93 2.49 1.06 2.66c.14.17 1.81 2.78 4.38 3.85c.6.26 1.07.41 1.43.52c.62.19 1.18.16 1.62.1c.48-.07 1.46-.6 1.67-1.18c.21-.58.21-1.07.14-1.18c-.07-.11-.26-.18-.53-.31z"/></svg>
+                                    <span data-key="whatsapp">WhatsApp</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                                <div id="location-2" class="tab-pane">
+                    <div class="location-details">
+                        <div class="map-container">
+                                                        <iframe src="http://googleusercontent.com/maps.google.com/3" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                        <div class="contact-panel">
+                            <p><strong data-key="address_title">Address:</strong> <span data-key="loc2_address"></span></p>
+                            <div class="contact-links">
+                                                                <a href="tel:+966555123456" class="contact-link">
+                                    <svg viewBox="0 0 24 24"><path fill="currentColor" d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24c1.12.37 2.33.57 3.57.57c.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1c0 1.25.2 2.45.57 3.57c.11.35.03.74-.25 1.02z"/></svg>
+                                    <span data-key="call_us">Call Us</span>
+                                </a>
+                                <a href="https://wa.me/966555123456" target="_blank" class="contact-link">
+                                    <svg viewBox="0 0 24 24"><path fill="currentColor" d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38c1.45.79 3.08 1.21 4.79 1.21h.01c5.46 0 9.91-4.45 9.91-9.91c0-5.46-4.45-9.91-9.91-9.91zM17.5 14.3c-.28-.14-1.67-.82-1.93-.91c-.26-.1-.45-.14-.64.14c-.19.28-.73.91-.9 1.1c-.17.19-.34.21-.62.07c-.28-.14-1.17-.43-2.23-1.37c-.83-.72-1.39-1.62-1.56-1.9c-.17-.28-.02-.43.12-.57c.12-.12.28-.31.42-.46c.14-.14.19-.24.28-.41c.1-.17.05-.31-.02-.46c-.07-.14-.64-1.54-.87-2.1c-.24-.56-.48-.48-.64-.49c-.15-.01-.31-.01-.48-.01c-.17 0-.45.07-.68.31c-.24.24-.9.88-.9 2.15c0 1.27.93 2.49 1.06 2.66c.14.17 1.81 2.78 4.38 3.85c.6.26 1.07.41 1.43.52c.62.19 1.18.16 1.62.1c.48-.07 1.46-.6 1.67-1.18c.21-.58.21-1.07.14-1.18c-.07-.11-.26-.18-.53-.31z"/></svg>
+                                    <span data-key="whatsapp">WhatsApp</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                                <div id="location-3" class="tab-pane">
+                    <div class="location-details">
+                        <div class="map-container">
+                                                        <iframe src="http://googleusercontent.com/maps.google.com/4" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                        <div class="contact-panel">
+                            <p><strong data-key="address_title">Address:</strong> <span data-key="loc3_address"></span></p>
+                            <div class="contact-links">
+                                                                <a href="tel:+966555123456" class="contact-link">
+                                    <svg viewBox="0 0 24 24"><path fill="currentColor" d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24c1.12.37 2.33.57 3.57.57c.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1c0 1.25.2 2.45.57 3.57c.11.35.03.74-.25 1.02z"/></svg>
+                                    <span data-key="call_us">Call Us</span>
+                                </a>
+                                <a href="https://wa.me/966555123456" target="_blank" class="contact-link">
+                                    <svg viewBox="0 0 24 24"><path fill="currentColor" d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38c1.45.79 3.08 1.21 4.79 1.21h.01c5.46 0 9.91-4.45 9.91-9.91c0-5.46-4.45-9.91-9.91-9.91zM17.5 14.3c-.28-.14-1.67-.82-1.93-.91c-.26-.1-.45-.14-.64.14c-.19.28-.73.91-.9 1.1c-.17.19-.34.21-.62.07c-.28-.14-1.17-.43-2.23-1.37c-.83-.72-1.39-1.62-1.56-1.9c-.17-.28-.02-.43.12-.57c.12-.12.28-.31.42-.46c.14-.14.19-.24.28-.41c.1-.17.05-.31-.02-.46c-.07-.14-.64-1.54-.87-2.1c-.24-.56-.48-.48-.64-.49c-.15-.01-.31-.01-.48-.01c-.17 0-.45.07-.68.31c-.24.24-.9.88-.9 2.15c0 1.27.93 2.49 1.06 2.66c.14.17 1.81 2.78 4.38 3.85c.6.26 1.07.41 1.43.52c.62.19 1.18.16 1.62.1c.48-.07 1.46-.6 1.67-1.18c.21-.58.21-1.07.14-1.18c-.07-.11-.26-.18-.53-.31z"/></svg>
+                                    <span data-key="whatsapp">WhatsApp</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
+            <div class="social-media-panel">
+                <h4 data-key="follow_us">Follow Us</h4>
+                <div class="social-icons">
+                                        <a href="#" target="_blank" aria-label="Tiktok"><img src="images/icons/TIKTOK.png" alt="TikTok"></a>
+                    <a href="#" target="_blank" aria-label="Snapchat"><img src="images/icons/SNAPCHAT.png" alt="Snapchat"></a>
+                    <a href="#" target="_blank" aria-label="Instagram"><img src="images/icons/INSTAGRAM.png" alt="Instagram"></a>
+                </div>
+            </div>
+        </section>
 
-               
-            </div>
+    </main>
 
-            <div class="social-media-panel">
-                <h4 data-key="follow_us">Follow Us</h4>
-                <div class="social-icons">
-                    <a href="#" target="_blank" aria-label="Tiktok"><img src="images/icons/TIKTOK.png" alt="TikTok"></a>
-                    <a href="#" target="_blank" aria-label="Snapchat"><img src="images/icons/SNAPCHAT.png" alt="Snapchat"></a>
-                    <a href="#" target="_blank" aria-label="Instagram"><img src="images/icons/INSTAGRAM.png" alt="Instagram"></a>
-                </div>
-            </div>
-        </section>
+    <footer class="glass-panel">
+        <p data-key="footer_text">© 2025 INSTANT TORCH. All Rights Reserved.</p>
+    </footer>
 
-    </main>
-
-    <footer class="glass-panel">
-        <p data-key="footer_text">© 2025 INSTANT TORCH. All Rights Reserved.</p>
-    </footer>
-
-    <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

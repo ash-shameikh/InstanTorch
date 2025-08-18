@@ -48,11 +48,13 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- 2. LANGUAGE & THEME ENGINE ---
     const translations = {
         en: {
+            page_title: "INSTANT TORCH - Firefighting Solutions",
             nav_home: "Home", nav_gallery: "Services", nav_locations: "Our Locations",
             brand_name_part1: "INSTANT", brand_name_part2: " TORCH",
             welcome_message: "Welcome To",
-            hero_title: "Your First Line of Defense",
-            hero_subtitle: "Protecting Riyadh, Saving Lives",
+            welcome_message1: "Your First Line of Defense",
+            hero_title: "Protecting Riyadh, Saving Lives",
+            hero_subtitle: "When Every Second Counts – We’re Already There.",
             hero_button: "View Our Services", gallery_title: "Our Services",
             g1_title: "Fire Suppression Systems", g1_desc: "Advanced sprinkler and gas suppression systems for all property types.",
             g2_title: "Fire Alarm Installation", g2_desc: "Installation and maintenance of reliable fire detection and alarm systems.",
@@ -69,12 +71,13 @@ document.addEventListener('DOMContentLoaded', () => {
             footer_text: `© ${new Date().getFullYear()} INSTANT TORCH. All Rights Reserved.`,
         },
         ar: {
+            page_title: "الشعلة الفورية - حلول مكافحة الحرائق",
             nav_home: "الرئيسية", nav_gallery: "خدماتنا", nav_locations: "فروعنا",
             brand_name_part1: "الشعلة", brand_name_part2: " الفورية",
             welcome_message: "مرحباً بكم في",
-            welcome_message1: "",
-            hero_title: "خط دفاعك الأول",
-            hero_subtitle: "حماية الرياض، إنقاذ الأرواح",
+            welcome_message1: "خط دفاعك الأول",
+            hero_title: "حماية الرياض، إنقاذ الأرواح",
+            hero_subtitle: "عندما يكون كل ثانية مهمة – نحن هناك بالفعل.",
             hero_button: "شاهد خدماتنا", gallery_title: "خدماتنا",
             g1_title: "أنظمة إطفاء الحريق", g1_desc: "أنظمة رشاشات وأنظمة إخماد متقدمة لجميع أنواع الممتلكات.",
             g2_title: "تركيب أنظمة الإنذار", g2_desc: "تركيب وصيانة أنظمة الكشف عن الحرائق والإنذار الموثوقة.",
