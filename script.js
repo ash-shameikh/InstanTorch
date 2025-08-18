@@ -75,7 +75,7 @@ document.addEventListener('DOMContentLoaded', () => {
         ar: {
             page_title: "الشعلة الفورية - حلول مكافحة الحرائق",
             nav_home: "الرئيسية", nav_gallery: "خدماتنا", nav_locations: "فروعنا",
-            brand_name_part1: "الشعلة", brand_name_part2: " الفورية",
+            brand_name_part1: "الشعلة", brand_name_part2: " السريعه",
             welcome_message: "مرحباً بكم في",
             welcome_message1: "خط دفاعك الأول",
             hero_title: "حماية الرياض، إنقاذ الأرواح",
