@@ -5,7 +5,7 @@
     --font-en: 'Barada', sans-serif;
     --font-ar: 'Cairo', sans-serif;
     --bg-color: #1a1a1a;
-    --bg-video-filter: brightness(0.4) blur(60px);
+    --bg-video-filter: brightness(0.4) blur(90px);
     --text-color: #ffffff;
     --text-color-muted: #bbbbbb;
     --fire-red: #e74c3c; /* Fiery red for dark mode */
@@ -20,7 +20,7 @@
 /* Light mode now uses a water/foam theme */
 body.light-mode {
     --bg-color: #f0f8ff; /* A light, watery blue */
-    --bg-video-filter: blur(60px) brightness(1);
+    --bg-video-filter: blur(90px) brightness(1);
     --text-color: #1c1e21;
     --text-color-muted: #555555;
     --water-blue: #3498db; /* A blue color for accents */
@@ -336,17 +336,17 @@ body:not(.light-mode) #gallery.glass-panel h2 { color: #1c1e21; }
     display: flex;
     align-items: center; /* Center items vertically */
     gap: 2rem;
-    animation: logo-scroll 15s linear infinite; /* Adjust duration to control speed */
+    animation: logo-scroll 9s linear infinite; /* Adjust duration to control speed */
 }
 
 .clients-grid img {
     /* Use a fixed height and let width adjust for a uniform look */
-    height: 60px;
+    height: 80px;
     width: auto;
     flex-shrink: 0; /* Prevents logos from shrinking */
     object-fit: contain; /* Ensures logos fit within their size */
-    filter: grayscale(100%) brightness(200%);
-    opacity: 0.5;
+    
+    
     transition: filter 0.4s ease, opacity 0.4s ease;
 }
 
@@ -373,7 +373,74 @@ body.light-mode .clients-grid img:hover {
         transform: translateX(-100%);
     }
 }
+/* --- New Fire Equipment Showcase Section --- */
+.fire-equipment-showcase {
+    margin-top: 5rem;
+    padding-top: 3rem;
+    border-top: 1px solid var(--glass-border);
+    text-align: center;
+}
 
+.fire-equipment-showcase h3 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: var(--text-color);
+}
+
+.fire-equipment-showcase p {
+    max-width: 800px;
+    margin: 0 auto 3rem;
+    color: var(--text-color-muted);
+}
+
+.equipment-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    justify-content: center;
+}
+
+.equipment-item {
+    background: var(--button-inactive-bg);
+    border: var(--glass-border);
+    border-radius: 15px;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.equipment-item:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--glass-shadow);
+}
+
+.equipment-item img {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    object-fit: contain;
+    margin-bottom: 1rem;
+}
+
+.equipment-item h4 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--fire-red);
+    margin-bottom: 0.5rem;
+}
+
+body.light-mode .equipment-item h4 {
+    color: var(--water-blue);
+}
+
+.equipment-item p {
+    font-size: 0.9rem;
+    color: var(--text-color-muted);
+    margin-bottom: 0;
+}
 /* --- Responsive adjustments for logos --- */
 @media (max-width: 768px) {
     .clients-grid {
