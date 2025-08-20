@@ -363,7 +363,7 @@ body:not(.light-mode) #gallery.glass-panel h2 { color: #1c1e21; }
 .clients-grid {
     display: flex;
     align-items: center; /* Center items vertically */
-    gap: 2rem;
+    gap: 5rem;
     animation: logo-scroll 15s linear infinite; /* Faster animation */
 }
 
