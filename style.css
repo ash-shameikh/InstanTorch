@@ -34,62 +34,62 @@ body.light-mode {
 
 /* --- BASE STYLES --- */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-body {
-    font-family: var(--font-en);
-    background-color: var(--bg-color);
-    color: var(--text-color);
-    line-height: 1.6;
-    overflow-x: hidden;
-    position: relative;
-    padding: 2rem;
-    transition: background-color 0.4s ease, color 0.4s ease;
+body { 
+    font-family: var(--font-en); 
+    background-color: var(--bg-color); 
+    color: var(--text-color); 
+    line-height: 1.6; 
+    overflow-x: hidden; 
+    position: relative; 
+    padding: 2rem; 
+    transition: background-color 0.4s ease, color 0.4s ease; 
 }
 body[dir="rtl"] { font-family: var(--font-ar); }
 
 /* The background video will now change based on the theme */
-#background-video {
-    position: fixed;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -2;
-    object-fit: cover;
-    filter: var(--bg-video-filter);
-    transition: opacity 0.4s ease, filter 0.4s ease;
+#background-video { 
+    position: fixed; 
+    inset: 0; 
+    width: 100%; 
+    height: 100%; 
+    z-index: -2; 
+    object-fit: cover; 
+    filter: var(--bg-video-filter); 
+    transition: opacity 0.4s ease, filter 0.4s ease; 
 }
 
 /* Hide the video in light mode to show the new background effect */
 body.light-mode #background-video { opacity: 0; }
 
 /* New background effect for light mode (water/foam) */
-body.light-mode::after {
-    content: '';
-    position: fixed;
-    inset: 0;
-    z-index: -1;
+body.light-mode::after { 
+    content: ''; 
+    position: fixed; 
+    inset: 0; 
+    z-index: -1; 
     background: radial-gradient(circle, #e6f7ff, #b3e0ff); /* Light, watery blue gradient */
-    opacity: 1;
-    transition: opacity 0.4s ease;
+    opacity: 1; 
+    transition: opacity 0.4s ease; 
 }
 
 /* --- SHARED STYLES --- */
-.glass-panel {
-    background: var(--glass-bg);
-    border: var(--glass-border);
-    border-radius: 20px;
-    box-shadow: var(--glass-shadow);
-    position: relative;
-    z-index: 5;
-    transition: background-color 0.4s ease, border 0.4s ease, box-shadow 0.4s ease;
+.glass-panel { 
+    background: var(--glass-bg); 
+    border: var(--glass-border); 
+    border-radius: 20px; 
+    box-shadow: var(--glass-shadow); 
+    position: relative; 
+    z-index: 5; 
+    transition: background-color 0.4s ease, border 0.4s ease, box-shadow 0.4s ease; 
 }
-body:not(.is-scrolling) .glass-panel {
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
+body:not(.is-scrolling) .glass-panel { 
+    backdrop-filter: blur(12px); 
+    -webkit-backdrop-filter: blur(12px); 
 }
-.glass-panel {
-    -webkit-backdrop-filter: blur(0px);
-    backdrop-filter: blur(0px);
-    transition: backdrop-filter 0.5s ease, -webkit-backdrop-filter 0.5s ease;
+.glass-panel { 
+    -webkit-backdrop-filter: blur(0px); 
+    backdrop-filter: blur(0px); 
+    transition: backdrop-filter 0.5s ease, -webkit-backdrop-filter 0.5s ease; 
 }
 
 main { padding-top: 100px; }
@@ -100,40 +100,40 @@ h2 { font-size: clamp(2rem, 5vw, 2.5rem); font-weight: 600; text-align: center; 
 p { font-size: 1.2rem; font-weight: 300; margin-bottom: 2rem; color: var(--text-color-muted); }
 
 /* Buttons and accents change color with the theme */
-.cta-button {
+.cta-button { 
     background-color: var(--fire-red); /* Uses fire-red in dark mode */
-    color: var(--dark-gray-text);
-    padding: 0.8rem 2rem;
-    border-radius: 50px;
-    text-decoration: none;
-    font-weight: 600;
-    transition: transform 0.3s ease;
-    display: inline-block;
-    border: none;
+    color: var(--dark-gray-text); 
+    padding: 0.8rem 2rem; 
+    border-radius: 50px; 
+    text-decoration: none; 
+    font-weight: 600; 
+    transition: transform 0.3s ease; 
+    display: inline-block; 
+    border: none; 
 }
 .cta-button:hover { transform: translateY(-3px); }
 body.light-mode .cta-button { background-color: var(--water-blue); /* Uses water-blue in light mode */ }
 
 /* --- HEADER & NAVIGATION --- */
-header {
-    position: fixed;
-    top: 2rem;
-    left: 2rem;
-    right: 2rem;
-    width: calc(100% - 4rem);
-    z-index: 1000;
-    padding-block: 1rem;
-    padding-inline: 2.5rem;
+header { 
+    position: fixed; 
+    top: 2rem; 
+    left: 2rem; 
+    right: 2rem; 
+    width: calc(100% - 4rem); 
+    z-index: 1000; 
+    padding-block: 1rem; 
+    padding-inline: 2.5rem; 
 }
 nav { display: flex; justify-content: space-between; align-items: center; gap: 1rem; }
 .logo img { max-height: 40px; display: block; flex-shrink: 0; }
 nav ul { list-style: none; display: flex; align-items: center; gap: 2rem; margin: 0; padding: 0; }
-nav ul li a {
-    text-decoration: none;
-    color: var(--text-color);
-    font-weight: 400;
-    transition: color 0.3s ease;
-    white-space: nowrap;
+nav ul li a { 
+    text-decoration: none; 
+    color: var(--text-color); 
+    font-weight: 400; 
+    transition: color 0.3s ease; 
+    white-space: nowrap; 
 }
 nav ul li a:hover, nav ul li a.active { color: var(--fire-red); /* Fire-red in dark mode */ }
 body.light-mode nav ul li a:hover, body.light-mode nav ul li a.active { color: var(--water-blue); /* Water-blue in light mode */ }
@@ -362,14 +362,17 @@ body:not(.light-mode) #gallery.glass-panel h2 { color: #1c1e21; }
 
 .clients-grid {
     display: flex;
+    align-items: center; /* Center items vertically */
     gap: 2rem;
-    animation: logo-scroll 45s linear infinite; /* Adjust duration to control speed */
+    animation: logo-scroll 15s linear infinite; /* Faster animation */
 }
 
 .clients-grid img {
-    max-width: 150px;
-    height: auto;
-    flex-shrink: 0;
+    /* Use a fixed height and let width adjust for a uniform look */
+    height: 60px;
+    width: auto;
+    flex-shrink: 0; /* Prevents logos from shrinking */
+    object-fit: contain; /* Ensures logos fit within their size */
     filter: grayscale(100%) brightness(200%);
     opacity: 0.5;
     transition: filter 0.4s ease, opacity 0.4s ease;
@@ -396,5 +399,15 @@ body.light-mode .clients-grid img:hover {
     }
     100% {
         transform: translateX(-100%);
+    }
+}
+
+/* --- Responsive adjustments for logos --- */
+@media (max-width: 768px) {
+    .clients-grid {
+        animation-duration: 25s; /* Slow down the animation a bit on mobile for better visibility */
+    }
+    .clients-grid img {
+        height: 40px; /* Make logos smaller on mobile */
     }
 }
