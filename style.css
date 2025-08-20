@@ -5,7 +5,7 @@
     --font-en: 'Barada', sans-serif;
     --font-ar: 'Cairo', sans-serif;
     --bg-color: #1a1a1a;
-    --bg-video-filter: brightness(0.4) blur(90px);
+    --bg-video-filter: brightness(0.4) blur(60px);
     --text-color: #ffffff;
     --text-color-muted: #bbbbbb;
     --fire-red: #e74c3c; /* Fiery red for dark mode */
@@ -20,7 +20,7 @@
 /* Light mode now uses a water/foam theme */
 body.light-mode {
     --bg-color: #f0f8ff; /* A light, watery blue */
-    --bg-video-filter: blur(90px) brightness(1);
+    --bg-video-filter: blur(60px) brightness(1);
     --text-color: #1c1e21;
     --text-color-muted: #555555;
     --water-blue: #3498db; /* A blue color for accents */
@@ -185,42 +185,14 @@ body.light-mode .brand-name span:first-child { color: var(--water-blue); /* Wate
 body.light-mode .hero-slider-dots .dot.active { background-color: var(--water-blue); /* Water-blue in light mode */ }
 
 /* --- GALLERY (SERVICES) & MODAL --- */
-.gallery-grid { column-count: 3; column-gap: 1.5rem; }
+#gallery .gallery-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 1.5rem; column-count: initial; }
+.gallery-item { cursor: pointer; border-radius: 15px; overflow: hidden; width: 300px; margin-bottom: 1.5rem; break-inside: avoid; position: relative; background-color: var(--button-inactive-bg); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+.gallery-item:hover { transform: translateY(-5px) scale(1.02); box-shadow: var(--glass-shadow); }
+.gallery-item img { width: 100%; height: 200px; object-fit: cover; display: block; border-radius: 15px; }
 
-.gallery-item { cursor: pointer; border-radius: 15px; overflow: hidden; width: 100%; display: inline-block; margin-bottom: 1.5rem; break-inside: avoid; position: relative; background-color: var(--button-inactive-bg); }
-
-.gallery-item img { width: 100%; height: auto; display: block; border-radius: 15px; }
-
-/* The border color changes with the theme */
-.gallery-item::before {
-    content: '';
-    position: absolute;
-    background: var(--fire-red);
-    box-shadow: 0 0 10px var(--fire-red);
-    animation: draw-border 5s linear infinite;
-}
-
-body.light-mode .gallery-item::before { background: var(--water-blue); box-shadow: 0 0 10px var(--water-blue); }
-
-/* The corrected keyframe animation that draws all 4 sides in sequence */
-@keyframes draw-border {
-    0% { top: 0; left: 0; width: 0; height: 5px; }
-    25% { top: 0; left: 0; width: 100%; height: 5px; }
-    25.001% { top: 0; left: auto; right: 0; width: 5px; height: 0; }
-    50% { top: 0; right: 0; width: 5px; height: 100%; }
-    50.001% { top: auto; bottom: 0; right: 0; width: 0; height: 5px; }
-    75% { bottom: 0; right: 0; width: 100%; height: 5px; }
-    75.001% { bottom: 0; right: auto; left: 0; width: 5px; height: 0; }
-    100% { bottom: 0; left: 0; width: 5px; height: 100%; }
-}
-
-body[dir="rtl"] #home h1[data-key="hero_title"] {
-    font-family: 'Aref Ruqaa', serif !important;
-    font-size: clamp(1.2rem, 4vw, 1.8rem) !important;
-    font-weight: 500 !important;
-    line-height: 1.5 !important;
-    letter-spacing: normal !important;
-}
+/* The border animation is removed as the gallery layout has changed */
+.gallery-item::before { content: none; }
+@keyframes draw-border { /* The animation is no longer needed */ }
 
 /* --- Modal Styles --- */
 .modal {
@@ -363,8 +335,8 @@ body:not(.light-mode) #gallery.glass-panel h2 { color: #1c1e21; }
 .clients-grid {
     display: flex;
     align-items: center; /* Center items vertically */
-    gap: 5rem;
-    animation: logo-scroll 15s linear infinite; /* Faster animation */
+    gap: 2rem;
+    animation: logo-scroll 15s linear infinite; /* Adjust duration to control speed */
 }
 
 .clients-grid img {
