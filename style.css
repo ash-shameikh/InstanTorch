@@ -335,8 +335,8 @@ body:not(.light-mode) #gallery.glass-panel h2 { color: #1c1e21; }
 .clients-grid {
     display: flex;
     align-items: center; /* Center items vertically */
-    gap: 2rem;
-    animation: logo-scroll 9s linear infinite; /* Adjust duration to control speed */
+    gap: 6rem;
+    animation: logo-scroll 6s linear infinite; /* Adjust duration to control speed */
 }
 
 .clients-grid img {
@@ -440,6 +440,166 @@ body.light-mode .equipment-item h4 {
     font-size: 0.9rem;
     color: var(--text-color-muted);
     margin-bottom: 0;
+}
+/* --- New Gallery Section Styles --- */
+#gallery .gallery-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.gallery-item {
+    cursor: pointer;
+    border-radius: 15px;
+    overflow: hidden;
+    width: 250px; /* Set a fixed width for uniformity */
+    height: 250px; /* Set a fixed height */
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-item:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: var(--glass-shadow);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures images fill the container without distortion */
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.1);
+}
+
+.item-overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.gallery-item:hover .item-overlay {
+    opacity: 1;
+}
+
+.item-overlay span {
+    color: white;
+    font-size: 1.25rem;
+    font-weight: 600;
+    text-align: center;
+    padding: 0 1rem;
+    pointer-events: none; /* Prevents text from interfering with clicks */
+}
+
+/* --- Modal Styles for the pop-up --- */
+.modal {
+    position: fixed;
+    z-index: 1500;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    display: none;
+    pointer-events: none;
+    padding: 2rem;
+}
+
+.modal.show {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+    pointer-events: all;
+}
+
+.modal-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 90vw;
+    max-height: 95vh;
+    width: auto;
+    height: auto;
+    overflow-y: auto;
+    animation: modal-fade-in 0.5s ease;
+    background: var(--glass-bg);
+    border: var(--glass-border);
+    border-radius: 15px;
+    padding: 2rem;
+}
+
+@keyframes modal-fade-in {
+    from { opacity: 0; transform: scale(0.95); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+.modal-image-container {
+    width: 100%;
+    max-width: 500px; /* Adjust as needed */
+    margin-bottom: 1rem;
+}
+
+.modal-image-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+}
+
+#modal-title {
+    color: var(--fire-red);
+    font-size: 1.5rem;
+    margin-bottom: 0.25rem;
+    text-align: center;
+}
+
+body.light-mode #modal-title {
+    color: var(--water-blue);
+}
+
+#modal-description {
+    color: var(--text-color-muted);
+    font-size: 1rem;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.close-button {
+    color: #fff;
+    background: var(--fire-red);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.close-button:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+
+body.light-mode .close-button {
+    background: var(--water-blue);
 }
 /* --- Responsive adjustments for logos --- */
 @media (max-width: 768px) {
