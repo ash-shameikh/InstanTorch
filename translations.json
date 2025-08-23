@@ -1,0 +1,28 @@
+{
+  "en": {
+    "gallery_title": "Our Fire Equipment",
+    "extinguisher_title": "Fire Extinguishers",
+    "extinguisher_desc": "We provide a wide range of fire extinguishers for all types of fires, including CO2, water, and powder, ensuring optimal safety for any environment.",
+    "sprinkler_title": "Sprinkler Systems",
+    "sprinkler_desc": "Automatic sprinkler systems designed to detect and suppress fires in their early stages, providing 24/7 protection.",
+    "pump_title": "Fire Pumps",
+    "pump_desc": "High-capacity fire pumps that ensure a powerful and reliable water supply to all fire suppression and sprinkler systems.",
+    "panel_title": "Fire Alarm Panels",
+    "panel_desc": "Centralized control panels for fire alarm systems, providing real-time monitoring and swift emergency response management.",
+
+    
+  },
+  "ar": {
+    "gallery_title": "معدات مكافحة الحرائق",
+    "extinguisher_title": "طفايات الحريق",
+    "extinguisher_desc": "نوفر مجموعة واسعة من طفايات الحريق لجميع أنواع الحرائق، بما في ذلك طفايات ثاني أكسيد الكربون، الماء، والبودرة، لضمان السلامة المثلى في أي بيئة.",
+    "sprinkler_title": "أنظمة الرشاشات",
+    "sprinkler_desc": "أنظمة رشاشات أوتوماتيكية مصممة للكشف عن الحرائق وإخمادها في مراحلها المبكرة، مما يوفر حماية على مدار الساعة.",
+    "pump_title": "مضخات الحريق",
+    "pump_desc": "مضخات حريق عالية السعة تضمن إمدادًا قويًا وموثوقًا للمياه لجميع أنظمة إخماد الحرائق والرشاشات.",
+    "panel_title": "لوحات إنذار الحريق",
+    "panel_desc": "لوحات تحكم مركزية لأنظمة إنذار الحريق، توفر مراقبة فورية وإدارة سريعة للاستجابة للطوارئ.",
+
+   
+  }
+}
