@@ -53,7 +53,6 @@ document.addEventListener('DOMContentLoaded', () => {
             brand_name_part1: "INSTANT", brand_name_part2: " TORCH",
             welcome_message: "Welcome To",
             welcome_message1: "Your First Line of Defense",
-            hero_title: "Protecting, Saving Lives",
             hero_subtitle: "When Every Second Counts – We’re Already There.",
             hero_button: "View Our Services",
             services_title: "Our Services",
@@ -64,6 +63,7 @@ document.addEventListener('DOMContentLoaded', () => {
             service5_title: "Fire Suppression Systems", service5_desc: "Specializing in the installation and maintenance of various fire suppression systems, including CO2 and FM200 systems.",
             service6_title: "Safety & Consulting", service6_desc: "Offering expert safety audits, risk assessments, and consulting services to ensure your property is compliant and secure.",
             equipment_gallery_title: "Our Fire Equipment",
+            equipment_devices_title: "Our Equipment & Devices",
             extinguisher_title: "Fire Extinguishers",
             extinguisher_desc: "We provide a wide range of fire extinguishers for all types of fires, including CO2, water, and powder, ensuring optimal safety for any environment.",
             sprinkler_title: "Sprinkler Systems",
@@ -88,7 +88,6 @@ document.addEventListener('DOMContentLoaded', () => {
             brand_name_part1: "الشعلة", brand_name_part2: " السريعة",
             welcome_message: "مرحباً بكم في",
             welcome_message1: "خط دفاعك الأول",
-            
             hero_subtitle: "عندما يكون كل ثانية مهمة – نحن هناك بالفعل.",
             hero_button: "شاهد خدماتنا",
             services_title: "خدماتنا",
@@ -99,6 +98,7 @@ document.addEventListener('DOMContentLoaded', () => {
             service5_title: "أنظمة إخماد الحريق", service5_desc: "متخصصون في تركيب وصيانة مختلف أنظمة إخماد الحريق، بما في ذلك أنظمة ثاني أكسيد الكربون و FM200.",
             service6_title: "السلامة والاستشارات", service6_desc: "تقديم خبرة في تدقيق السلامة وتقييم المخاطر وخدمات استشارية لضمان أن ممتلكاتك آمنة ومتوافقة.",
             equipment_gallery_title: "معدات مكافحة الحرائق",
+            equipment_devices_title: "معداتنا وأجهزتنا",
             extinguisher_title: "طفايات الحريق",
             extinguisher_desc: "نوفر مجموعة واسعة من طفايات الحريق لجميع أنواع الحرائق، بما في ذلك طفايات ثاني أكسيد الكربون، الماء، والبودرة، لضمان السلامة المثلى في أي بيئة.",
             sprinkler_title: "أنظمة الرشاشات",
@@ -109,10 +109,9 @@ document.addEventListener('DOMContentLoaded', () => {
             panel_desc: "لوحات تحكم مركزية لأنظمة إنذار الحريق، توفر مراقبة فورية وإدارة سريعة للاستجابة للطوارئ.",
             clients_title: "عملاؤنا",
             clients_intro_text: "نفخر بخدمة مجموعة متنوعة من العملاء في جميع أنحاء المملكة العربية السعودية، وتقديم حلول موثوقة للسلامة من الحرائق تحمي أصولهم وأفرادهم. تضم قائمة عملائنا روادًا في القطاعات الصناعية والتجارية والحكومية.",
-            loc1_button: "المقر الرئيسي", 
+            loc1_button: "المقر الرئيسي", loc2_button: "الفرع المركزي", loc3_button: "المنطقة الصناعية",
             address_title: "العنوان:",
             loc1_address: "طريق الدمام، حي قرطبة، الرياض، المملكة العربية السعودية",
-        
             call_us: "اتصل بنا", whatsapp: "واتساب", follow_us: "تابعنا",
             footer_text: `© ${new Date().getFullYear()} الشعلة الفورية. جميع الحقوق محفوظة.`,
         }
