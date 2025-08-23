@@ -85,10 +85,10 @@ document.addEventListener('DOMContentLoaded', () => {
         ar: {
             page_title: "الشعلة السريعة - حلول مكافحة الحرائق",
             nav_home: "الرئيسية", nav_gallery: "خدماتنا", nav_locations: "فروعنا",
-            brand_name_part1: "الشعلة", brand_name_part2: " الفورية",
+            brand_name_part1: "الشعلة", brand_name_part2: " السريعة",
             welcome_message: "مرحباً بكم في",
             welcome_message1: "خط دفاعك الأول",
-            hero_title: "حماية الرياض، إنقاذ الأرواح",
+            hero_title: "حماية المؤسسات, إنقاذ الأرواح",
             hero_subtitle: "عندما يكون كل ثانية مهمة – نحن هناك بالفعل.",
             hero_button: "شاهد خدماتنا",
             services_title: "خدماتنا",
