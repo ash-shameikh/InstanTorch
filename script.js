@@ -55,7 +55,8 @@ document.addEventListener('DOMContentLoaded', () => {
             welcome_message1: "Your First Line of Defense",
             hero_title: "Protecting, Saving Lives",
             hero_subtitle: "When Every Second Counts – We’re Already There.",
-            hero_button: "View Our Services", gallery_title: "Our Services",
+            hero_button: "View Our Services",
+            gallery_title: "Our Services",
             g1_title: "Fire Suppression Systems", g1_desc: "Advanced sprinkler and gas suppression systems for all property types.",
             g2_title: "Fire Alarm Installation", g2_desc: "Installation and maintenance of reliable fire detection and alarm systems.",
             g3_title: "Fire Extinguisher Maintenance", g3_desc: "Regular inspection and refilling services for all types of extinguishers.",
@@ -71,6 +72,17 @@ document.addEventListener('DOMContentLoaded', () => {
             loc3_address: "Industrial City 2, Riyadh, Saudi Arabia",
             call_us: "Call Us", whatsapp: "WhatsApp", follow_us: "Follow Us",
             footer_text: `© ${new Date().getFullYear()} INSTANT TORCH. All Rights Reserved.`,
+
+            // New translations for the equipment gallery
+            equipment_gallery_title: "Our Fire Equipment",
+            extinguisher_title: "Fire Extinguishers",
+            extinguisher_desc: "We provide a wide range of fire extinguishers for all types of fires, including CO2, water, and powder, ensuring optimal safety for any environment.",
+            sprinkler_title: "Sprinkler Systems",
+            sprinkler_desc: "Automatic sprinkler systems designed to detect and suppress fires in their early stages, providing 24/7 protection.",
+            pump_title: "Fire Pumps",
+            pump_desc: "High-capacity fire pumps that ensure a powerful and reliable water supply to all fire suppression and sprinkler systems.",
+            panel_title: "Fire Alarm Panels",
+            panel_desc: "Centralized control panels for fire alarm systems, providing real-time monitoring and swift emergency response management."
         },
         ar: {
             page_title: "الشعلة السريعة - حلول مكافحة الحرائق",
@@ -96,6 +108,17 @@ document.addEventListener('DOMContentLoaded', () => {
             loc3_address: "المدينة الصناعية الثانية، الرياض، المملكة العربية السعودية",
             call_us: "اتصل بنا", whatsapp: "واتساب", follow_us: "تابعنا",
             footer_text: `© ${new Date().getFullYear()} الشعلة الفورية. جميع الحقوق محفوظة.`,
+
+            // New translations for the equipment gallery
+            equipment_gallery_title: "معدات مكافحة الحرائق",
+            extinguisher_title: "طفايات الحريق",
+            extinguisher_desc: "نوفر مجموعة واسعة من طفايات الحريق لجميع أنواع الحرائق، بما في ذلك طفايات ثاني أكسيد الكربون، الماء، والبودرة، لضمان السلامة المثلى في أي بيئة.",
+            sprinkler_title: "أنظمة الرشاشات",
+            sprinkler_desc: "أنظمة رشاشات أوتوماتيكية مصممة للكشف عن الحرائق وإخمادها في مراحلها المبكرة، مما يوفر حماية على مدار الساعة.",
+            pump_title: "مضخات الحريق",
+            pump_desc: "مضخات حريق عالية السعة تضمن إمدادًا قويًا وموثوقًا للمياه لجميع أنظمة إخماد الحرائق والرشاشات.",
+            panel_title: "لوحات إنذار الحريق",
+            panel_desc: "لوحات تحكم مركزية لأنظمة إنذار الحريق، توفر مراقبة فورية وإدارة سريعة للاستجابة للطوارئ."
         }
     };
 
@@ -152,7 +175,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const themeSwitcher = document.getElementById('theme-switcher');
     const applyTheme = (theme) => {
         document.body.classList.toggle('light-mode', theme === 'light');
-        
+
         // Dynamically change the video source based on the theme
         const videoElement = document.getElementById('background-video');
         if (videoElement) {
@@ -220,47 +243,48 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    // --- GALLERY (SERVICES) MODAL ---
-    const modal = document.getElementById('gallery-modal');
-    if (modal) {
-        const galleryItems = Array.from(document.querySelectorAll('.gallery-item'));
-        const modalImage = document.getElementById('modal-image');
-        const modalTitle = document.getElementById('modal-title');
-        const modalDescription = document.getElementById('modal-description');
-        const closeButton = modal.querySelector('.close-button');
-        let currentIndex = 0;
+    // --- GALLERY (EQUIPMENT) MODAL ---
+    const equipmentModal = document.getElementById('gallery-modal');
+    if (equipmentModal) {
+        const galleryItems = document.querySelectorAll('#gallery .gallery-item');
+        const modalImage = equipmentModal.querySelector('#modal-image');
+        const modalTitle = equipmentModal.querySelector('#modal-title');
+        const modalDescription = equipmentModal.querySelector('#modal-description');
+        const closeButton = equipmentModal.querySelector('.close-button');
 
-        const updateModalContent = (index) => {
-            if (!galleryItems[index]) return;
-            const item = galleryItems[index];
-            const img = item.querySelector('img');
-            const titleEl = item.querySelector('h3');
-            const descEl = item.querySelector('p');
+        galleryItems.forEach(item => {
+            item.addEventListener('click', (e) => {
+                e.preventDefault();
+                const imageUrl = item.getAttribute('data-image');
+                const titleKey = item.getAttribute('data-title-key');
+                const descKey = item.getAttribute('data-desc-key');
+                const lang = localStorage.getItem('language') || 'en';
 
-            modalImage.style.opacity = 0;
-            setTimeout(() => {
-                if (img) modalImage.src = img.src;
-                if (titleEl) modalTitle.textContent = titleEl.textContent;
-                if (descEl) modalDescription.textContent = descEl.textContent;
-                modalImage.style.opacity = 1;
-            }, 300);
+                // Populate the modal with image and translated text
+                modalImage.src = imageUrl;
+                modalTitle.textContent = translations[lang][titleKey];
+                modalDescription.textContent = translations[lang][descKey];
 
-            currentIndex = index;
-        };
-
-        galleryItems.forEach((item, index) => {
-            item.addEventListener('click', () => {
-                updateModalContent(index);
-                modal.classList.add('show');
+                // Show the modal
+                equipmentModal.classList.add('show');
+                document.body.style.overflow = 'hidden';
             });
         });
 
-        const closeModal = () => modal.classList.remove('show');
+        const closeModal = () => {
+            equipmentModal.classList.remove('show');
+            document.body.style.overflow = '';
+        };
+
         if (closeButton) closeButton.addEventListener('click', closeModal);
-        modal.addEventListener('click', e => { if (e.target === modal) closeModal(); });
-        window.addEventListener('keydown', e => {
-            if (modal.classList.contains('show')) {
-                if (e.key === 'Escape') closeModal();
+        window.addEventListener('click', (e) => {
+            if (e.target === equipmentModal) {
+                closeModal();
+            }
+        });
+        window.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && equipmentModal.classList.contains('show')) {
+                closeModal();
             }
         });
     }
